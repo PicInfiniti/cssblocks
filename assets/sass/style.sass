@@ -1,0 +1,65 @@
+*
+  box-sizing: border-box
+  padding: 0
+  margin: 0
+
+.wrapper 
+  display: grid
+  border-style: solid
+  border-color: red
+  grid-template-columns: repeat(6, 1fr)
+  grid-template-rows: repeat(24, 1fr)
+  grid-gap: 0px
+  width: 100vw
+  height: 100vh
+
+.one 
+  border-style: solid
+  border-color: blue
+  grid-column: 1 / 7
+  grid-row: 1 / 5
+
+.two 
+  border-style: solid
+  border-color: yellow
+  grid-column: 1 / 7
+  grid-row: 5
+
+.three 
+  border-style: solid
+  border-color: violet
+  grid-column: 1
+  grid-row: 6 / 25
+  overflow: scroll
+  .item
+    border-bottom: 1px solid black
+    overflow: hidden
+    padding-left: 4vw
+    font-size: 14px
+    a
+      color: black
+      text-decoration: none
+      text-overflow: ellipsis
+      white-space: nowrap
+    &:hover
+      text-decoration: underline
+.four 
+  border-style: solid
+  border-color: aqua
+  grid-column: 2 / 6
+  grid-row: 6 / 24
+  overflow: scroll
+
+.five 
+  border-style: solid
+  border-color: green
+  grid-column: 2 / 7
+  grid-row: 24 / 27
+  
+
+.six 
+  border-style: solid
+  border-color: purple
+  grid-column: 6 / 7
+  grid-row: 6 / 24
+  overflow: scroll
